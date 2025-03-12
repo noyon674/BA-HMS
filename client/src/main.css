@@ -22,6 +22,10 @@
   .active{
     color: #F7A582;
   }
+
+  .category:hover ul{
+    display: block;
+  }
 /* @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite"; */
