@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
+  // toggle for mobile menu
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const toggle = () => {
     setIsOpenMenu(!isOpenMenu);
