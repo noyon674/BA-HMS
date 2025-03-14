@@ -1,46 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-    /* background colors */
-    --color-bgprimary: #07332F;
-    --color-bgsecondary: #FFF7F4;
+  /* background colors */
+  --color-bgprimary: #07332f;
+  --color-bgsecondary: #fff7f4;
 
-    /* text colores */
-    --color-textprimary: #FFFFFF;
-    --color-textsecondary: #F7A582;
-    --color-black: #222222;
+  /* text colores */
+  --color-textprimary: #ffffff;
+  --color-textsecondary: #f7a582;
+  --color-black: #222222;
 
-    /* border colores */
-    --color-borderclr: #F7A582;
-    --color-borderbg: #F7A582;
+  /* border colores */
+  --color-borderclr: #f7a582;
+  --color-borderbg: #f7a582;
 
-    /* mobile menu bg */
-    --color-mobilemenubg: #0E4D49
-
-  }
-
-  .active{
-    color: #F7A582;
-  }
-
-  .category:hover ul{
-    display: block;
-  }
-
-  .homeappoinment:hover .overlay{
-    width: 100%;
-    height: 100%;
-}
-.box:hover .overlay{
-    height: 100%;
-    transition: .3s ease;
+  /* mobile menu bg */
+  --color-mobilemenubg: #0e4d49;
 }
 
-.box:hover a{
-    color:white;
+.active {
+  color: #f7a582;
+}
+
+.category:hover ul {
+  display: block;
+}
+
+.box:hover .overlay {
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover a {
+  color: white;
 }
 
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
-
