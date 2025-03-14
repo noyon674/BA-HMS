@@ -26,7 +26,21 @@
   .category:hover ul{
     display: block;
   }
-/* @import "flowbite/src/themes/default";
+
+  .homeappoinment:hover .overlay{
+    width: 100%;
+    height: 100%;
+}
+.box:hover .overlay{
+    height: 100%;
+    transition: .3s ease;
+}
+
+.box:hover a{
+    color:white;
+}
+
+@import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
-@source "../node_modules/flowbite"; */
+@source "../node_modules/flowbite";
 
