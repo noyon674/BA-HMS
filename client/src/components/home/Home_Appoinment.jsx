@@ -30,7 +30,7 @@ function Home_Appoinment() {
             </Link>
           </div>
         </div>
-        <div className="basis-2/3 grid grid-cols-1 sm:grid-cols-2 bg-bgprimary divide-y-2 sm:divide-x-2 divide-red-100">
+        <div className="basis-2/3 grid grid-cols-1 sm:grid-cols-2 bg-bgprimary divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-red-100">
           <div className="py-16 px-10 ">
             <div className="text-5xl text-textsecondary mb-5">
               <FontAwesomeIcon icon={faUserDoctor} />
@@ -39,7 +39,7 @@ function Home_Appoinment() {
               <h3 className="text-2xl text-textprimary font-semibold">
                 Need Family Health
               </h3>
-              <p className="text-xl text-gray-400 mt-2">
+              <p className="text-lg text-gray-400 mt-2 ">
                 We understand the importance of family health overall
                 well-being.
               </p>
@@ -53,7 +53,7 @@ function Home_Appoinment() {
               <h3 className="text-2xl text-textprimary font-semibold">
                 24 hours service
               </h3>
-              <p className="text-xl text-gray-400 mt-2">
+              <p className="text-lg text-gray-400 mt-2">
                 We take pride in offering 24-hour medical services to ensure
                 that you.
               </p>

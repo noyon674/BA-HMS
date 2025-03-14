@@ -9,11 +9,15 @@ function Home_About() {
       <div className="container mx-auto flex flex-col xl:flex-row items-center ">
         <div className="basis-1/2 flex items-center">
           <div className="">
-            <img src="./img/hero-img-1.jpg" alt="" className="rounded-full" />
+            <img
+              src="./assets/images/hero-img-1.jpg"
+              alt=""
+              className="rounded-full"
+            />
           </div>
           <div className="flex flex-col justify-center items-center gap-2">
             <img
-              src="./img/hero-img-2.jpg"
+              src="./assets/images/hero-img-2.jpg"
               alt=""
               className="rounded-full w-2/3"
             />
@@ -24,10 +28,7 @@ function Home_About() {
               className="rounded-full"
               loop
             >
-              <source
-                src="./video/5998353-hd_1920_1080_30fps.mp4"
-                type="video/mp4"
-              />
+              <source src="./assets/video/checkup.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

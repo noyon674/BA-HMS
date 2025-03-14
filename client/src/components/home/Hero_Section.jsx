@@ -26,7 +26,7 @@ function Hero_Section() {
             believe that everyone deserves access to excellent medical care
             without compromising on quality.
           </p>
-          <div className="flex my-5 gap-x-5 items-center justify-center md:justify-start">
+          <div className="flex sm:my-5 mt-10 gap-x-5 items-center justify-center md:justify-start">
             <Link className="capitalize text-textsecondary text-xl transition-all duration-200 font-semibold border border-s-textsecondary px-5 py-2 rounded-3xl hover:bg-textprimary hover:border-textprimary">
               Read more
             </Link>
