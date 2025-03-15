@@ -5,16 +5,20 @@ import Home_Appoinment from "../components/home/Home_Appoinment";
 import Home_About from "../components/home/Home_About";
 import Home_Service from "../components/home/Home_Service";
 import Open_Appoinment from "../components/common/Open_Appoinment";
+import Home_Work from "../components/home/Home_Work";
+import Testimonial from "../components/common/Pateint_Testimonial";
 
 function Home() {
   return (
-    <div>
+    <>
       <Hero_Section />
       <Home_Appoinment />
       <Home_About />
       <Home_Service />
       <Open_Appoinment />
-    </div>
+      <Home_Work />
+      <Testimonial />
+    </>
   );
 }
 
