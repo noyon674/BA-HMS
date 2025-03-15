@@ -30,22 +30,22 @@ function NavLinks() {
         </button>
 
         {isOpen && (
-          <div className="absolute left-0 top-12 w-52 bg-bgprimary shadow-lg rounded-md text-lg pt-2">
+          <div className="absolute left-0 top-12 w-52 bg-bgsecondary text-bgprimary shadow-lg rounded-md text-lg">
             <NavLink
               to="/category/web-development"
-              className="block px-4 py-2 hover:bg-mobilemenubg"
+              className="block px-4 py-4 hover:bg-mobilemenubg hover:text-textsecondary"
             >
               Web Development
             </NavLink>
             <NavLink
               to="/category/design"
-              className="block px-4 py-2 hover:bg-mobilemenubg"
+              className="block px-4 py-4 hover:bg-mobilemenubg hover:text-textsecondary"
             >
               Design
             </NavLink>
             <NavLink
               to="/category/marketing"
-              className="block px-4 py-2 hover:bg-mobilemenubg"
+              className="block px-4 py-4 hover:bg-mobilemenubg hover:text-textsecondary"
             >
               Marketing
             </NavLink>
