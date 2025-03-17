@@ -8,6 +8,7 @@ import Open_Appoinment from "../components/common/Open_Appoinment";
 import Home_Work from "../components/home/Home_Work";
 import Testimonial from "../components/common/Pateint_Testimonial";
 import Home_Blog from "../components/home/Home_Blog";
+import ContactForm from "../components/common/ContactForm";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <Home_Work />
       <Testimonial />
       <Home_Blog />
+      <ContactForm />
     </>
   );
 }
