@@ -4,6 +4,7 @@ import NavLinks from "./NavLinks";
 import Appoinment from "./Appoinment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import logo from "/assets/images/logo.svg";
 
 function Header() {
   // toggle for mobile menu
@@ -13,10 +14,10 @@ function Header() {
   };
 
   return (
-    <div className="bg-bgprimary pt-5 pb-2 px-3 sm:px-0">
+    <div className="bg-bgprimary pt-5 pb-5 px-3 sm:px-0">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <img src="./assets/images/logo.svg" alt="logo.svg" />
+          <img src={logo} alt="logo.svg" />
         </div>
 
         {/* desktop menu */}

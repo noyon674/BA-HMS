@@ -10,6 +10,7 @@ import {
   FaClock,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import logo from "/assets/images/logo.svg";
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
         {/* Logo and Description */}
         <div>
           <h2 className="text-xl font-bold flex items-center gap-2">
-            <img src="./assets/images/logo.svg" alt="" />
+            <img src={logo} alt="logo.svg" />
           </h2>
           <p className="mt-2 text-base font-semibold text-gray-300">
             Our family-centered approach to healthcare ensures that each member

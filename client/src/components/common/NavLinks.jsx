@@ -6,7 +6,7 @@ function NavLinks() {
     <>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/about">About Us</NavLink>
-      <NavLink to="/services">Services</NavLink>
+      <NavLink to="/departments">Departments</NavLink>
       <NavLink to="/blogs">Blogs</NavLink>
       <NavLink to="/contact">Contact Us</NavLink>
     </>

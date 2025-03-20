@@ -48,6 +48,9 @@
   height: 100%;
 }
 
+.alldepartment .bg-mobilemenubg.mx-10.text-center.rounded.py-5.active {
+  background-color: #f7a582;
+}
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
