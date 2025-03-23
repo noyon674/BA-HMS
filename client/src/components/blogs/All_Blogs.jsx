@@ -3,8 +3,6 @@ import { blogsData } from "../../../data/blogs";
 import { Link } from "react-router-dom";
 import CryptoJS from "crypto-js";
 
-const secretKey = "iamnoyon"; // Keep this secret
-
 const Blogs = () => {
   const blogsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,7 +26,7 @@ const Blogs = () => {
           // Encrypt ID dynamically
           const encryptedId = CryptoJS.AES.encrypt(
             id.toString(),
-            secretKey
+            "iamnoyon"
           ).toString();
           const encodedId = encodeURIComponent(encryptedId); // Encode for safe URL usage
 
@@ -41,7 +39,6 @@ const Blogs = () => {
                 <Link
                   title="read more"
                   to={`/blogs/${encodedId}`} // Use encrypted ID in URL
-                  state={{ id, title, desc, img }}
                 >
                   <h2 className="text-2xl mt-1 mb-5 font-semibold text-mobilemenubg hover:text-textsecondary">
                     {title}

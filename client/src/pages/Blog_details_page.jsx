@@ -6,7 +6,9 @@ function Blog_details_page() {
   return (
     <div>
       <Blog_details_banner />
-      <Blog_details />
+      <div className="bg-bgsecondary">
+        <Blog_details />
+      </div>
     </div>
   );
 }

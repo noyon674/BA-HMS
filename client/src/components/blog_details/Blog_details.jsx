@@ -1,11 +1,20 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import Ask_Question from "../common/Ask_Question";
+import { useParams } from "react-router-dom";
+
+import CryptoJS from "crypto-js";
+import { blogsData } from "../../../data/blogs";
 
 function Blog_details() {
-  const { title, desc, img } = useLocation().state;
-  console.log(location);
+  const { id } = useParams();
+  const decryptedBytes = CryptoJS.AES.decrypt(
+    decodeURIComponent(id), // Decode URL-safe string
+    "iamnoyon"
+  );
+  const blogId = decryptedBytes.toString(CryptoJS.enc.Utf8);
+  const data = blogsData.filter((blog) => blog.id == blogId);
 
-  if (!title) {
+  if (!data[0].title) {
     return (
       <div className="text-center text-2xl font-semibold mt-10">
         Blog not found
@@ -14,15 +23,23 @@ function Blog_details() {
   }
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 pt-14 lg:pt-31">
       <div className="max-w-6xl mx-auto">
         <img
-          src={img}
+          src={data[0].img}
           alt="blog.jpg"
           className="w-full h-100 object-cover rounded-md"
         />
-        <h1 className="text-4xl font-bold mt-6">{title}</h1>
-        <div className="mt-4 text-lg text-gray-700 leading-relaxed">{desc}</div>
+        <h1 className="text-3xl font-semibold text-gray-800 mt-10">
+          {data[0].title}
+        </h1>
+        <div className="mt-4 text-lg text-gray-700 leading-relaxed">
+          {data[0].desc}
+        </div>
+
+        <div>
+          <Ask_Question />
+        </div>
       </div>
     </div>
   );

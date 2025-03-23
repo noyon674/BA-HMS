@@ -27,8 +27,28 @@ function Depart_details_content({ desc, img }) {
 
   return (
     <div className="bg-bgsecondary pt-10 lg:pt-20">
+      <div className="container mx-auto">
+        <div className="basis-1/3 h-full bg-bgprimary m-10 pt-10 pb-20 rounded lg:hidden">
+          <h2 className="text-3xl font-semibold text-textprimary text-center mb-10">
+            All Departments
+          </h2>
+          <div className="flex flex-col gap-5 alldepartment">
+            {all_department.map((dept, index) => (
+              <NavLink
+                key={index}
+                className="bg-mobilemenubg mx-10 text-center rounded py-5"
+                to={`/departments/${dept.slug}`}
+              >
+                <h3 className="text-2xl font-semibold text-textprimary capitalize">
+                  {dept.name}
+                </h3>
+              </NavLink>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="container mx-auto flex">
-        <div className="basis-2/3 px-10">
+        <div className="lg:basis-2/3 px-10">
           <img src={img} alt="" />
           <p className="mt-10 text-lg text-gray-600">{desc}</p>
           <div>
@@ -52,7 +72,7 @@ function Depart_details_content({ desc, img }) {
           </div>
         </div>
 
-        <div className="basis-1/3 h-full bg-bgprimary m-10 pt-10 pb-20">
+        <div className="basis-1/3 h-full bg-bgprimary m-10 pt-10 pb-20 hidden lg:block">
           <h2 className="text-3xl font-semibold text-textprimary text-center mb-10">
             All Departments
           </h2>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Blog_details_banner() {
   return (
-    <div className="bg-bgprimary h-50 lg:h-[50vh] flex flex-col gap-5 items-center justify-center mb-10 md:mb-20">
+    <div className="bg-bgprimary h-50 lg:h-[50vh] flex flex-col gap-5 items-center justify-center">
       <h2 className="text-4xl font-semibold text-textsecondary">
         Blog Details
       </h2>
