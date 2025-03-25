@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Layout from "./layouts/Layout";
 import Home from "./components/home/Home";
-import About from "./components/about/About";
+import About from "./components/about/About"; // Ensure this path is correct
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="about" element={<About />} /> {/* Ensure path is correct */}
         </Route>
       </Routes>
     </BrowserRouter>
@@ -19,3 +19,4 @@ function App() {
 }
 
 export default App;
+

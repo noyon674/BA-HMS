@@ -1,0 +1,16 @@
+{
+  "name": "ba-hms",
+  "version": "1.0.0",
+  "description": "command for run frontend:\r ```\r npm run dev\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
