@@ -3,6 +3,7 @@ import Depart_detail_banner from "../components/department_details.jsx/Depart_de
 import Depart_details_content from "../components/department_details.jsx/Depart_details_content";
 import { all_department } from "../../data/departmentData";
 import { useParams } from "react-router-dom";
+import Our_working_step from "../components/department_details.jsx/Our_working_step";
 
 function Department_details() {
   const params = useParams().name;

@@ -8,6 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 import { toggleData } from "../../../data/departmentData";
 import { all_department } from "../../../data/departmentData";
+import Our_working_step from "./Our_working_step";
 
 function Depart_details_content({ desc, img }) {
   const [toggleId, setToggleId] = useState(null);
@@ -115,6 +116,7 @@ function Depart_details_content({ desc, img }) {
           </div>
         ))}
       </div>
+      <Our_working_step />
     </div>
   );
 }
