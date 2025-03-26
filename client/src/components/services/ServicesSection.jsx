@@ -1,3 +1,4 @@
+import { TiTick } from "react-icons/ti";
 export default function ServicesSection() {
   const services = [
     {
@@ -66,28 +67,29 @@ export default function ServicesSection() {
 
   return (
     <section className="bg-[#FFF6F2] py-16 px-6">
-      <div className="max-w-5xl mx-auto text-center">
-        <h3 className="text-[#E69C74] uppercase tracking-widest">
+      <div className="max-w-5xl mx-auto text-center space-y-4 mb-20">
+        <h3 className="text-[#E69C74] uppercase tracking-widest text-2xl">
           Our Services
         </h3>
-        <h2 className="text-3xl font-bold text-[#0F2D26] mt-2">
+        <h2 className="text-5xl font-bold text-[#0F2D26] mt-2">
           Providing Medical Care For The Sickest <br /> In Our Community.
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-10">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-[#0F2D26] p-6 rounded-xl text-white shadow-lg"
+            className="bg-[#0F2D26] p-6 rounded-xl text-white shadow-lg space-y-5"
           >
-            <div className="text-3xl">{service.icon}</div>
-            <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-            <p className="text-sm mt-2">{service.description}</p>
-            <ul className="mt-4 space-y-1">
+            <div className="text-5xl">{service.icon}</div>
+            <h3 className="text-3xl font-semibold mt-4">{service.title}</h3>
+            <p className="text-sm mt-2 text-gray-400">{service.description}</p>
+            <ul className="mt-4 space-y-5">
               {service.points.map((point, i) => (
                 <li key={i} className="flex items-center gap-2 text-[#E69C74]">
-                  ✅ <span className="text-white">{point}</span>
+                  <TiTick className="text-2xl bg-[#e69c7454] rounded-full" />
+                  <span className="text-white">{point}</span>
                 </li>
               ))}
             </ul>
