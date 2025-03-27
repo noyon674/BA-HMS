@@ -20,7 +20,7 @@ const ContactForm = () => {
             <label className="block text-sm mb-2">Enter Your Full Name</label>
             <input
               type="text"
-              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-rose-500 py-2"
+              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-[#E69C74] py-2"
               placeholder="Full Name"
             />
           </div>
@@ -28,7 +28,7 @@ const ContactForm = () => {
             <label className="block text-sm mb-2">Enter Your Email</label>
             <input
               type="email"
-              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-rose-500 py-2"
+              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-[#E69C74] py-2"
               placeholder="Email Address"
             />
           </div>
@@ -38,7 +38,7 @@ const ContactForm = () => {
             </label>
             <input
               type="text"
-              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-rose-500 py-2"
+              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-[#E69C74] py-2"
               placeholder="Phone Number"
             />
           </div>
@@ -46,14 +46,14 @@ const ContactForm = () => {
             <label className="block text-sm mb-2">Your Subject</label>
             <input
               type="text"
-              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-rose-500 py-2"
+              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-[#E69C74] py-2"
               placeholder="Subject"
             />
           </div>
           <div className="col-span-1 md:col-span-2">
             <label className="block text-sm mb-2">Type Your Message</label>
             <textarea
-              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-rose-500 py-2 h-24 resize-none"
+              className="w-full bg-transparent border-b border-gray-300 focus:outline-none focus:border-[#E69C74] py-2 h-24 resize-none"
               placeholder="Your Message"
             ></textarea>
           </div>
