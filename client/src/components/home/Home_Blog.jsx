@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { blogsData } from "../../../data/blogs";
-import CryptoJS from "crypto-js";
+import * as CryptoJS from "crypto-js";
 
 const secretKey = "iamnoyon"; // Keep this secret
 
