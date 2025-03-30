@@ -9,6 +9,7 @@ import Department_details from "./pages/Department_details";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Take_Appoinment from "./components/common/Take_Appoinment";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/departments/:name" element={<Department_details />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/appoinment" element={<Take_Appoinment />} />
         </Route>
       </Routes>
     </BrowserRouter>

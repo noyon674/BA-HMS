@@ -51,3 +51,7 @@
 .alldepartment .bg-mobilemenubg.mx-10.text-center.rounded.py-5.active {
   background-color: #f7a582;
 }
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
