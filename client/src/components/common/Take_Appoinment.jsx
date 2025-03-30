@@ -35,32 +35,39 @@ export default function AppointmentBooking() {
         <div className="basis-1/2 flex items-center rounded-r-md">
           <div className="w-full px-14">
             <h2 className="text-3xl font-semibold mb-4">Book an Appointment</h2>
-            <label className="block mb-2">Select Doctor</label>
-            <select
-              className="w-full p-2 border rounded-md mb-4 "
-              value={selectedDoctor}
-              onChange={(e) => setSelectedDoctor(e.target.value)}
-            >
-              <option value="">-- Choose a Doctor --</option>
-              {doctors.map((doc) => (
-                <option key={doc.id} value={doc.name}>
-                  {doc.name}
-                </option>
-              ))}
-            </select>
-            <label className="block mb-2">Select Date</label>
-            <DatePicker
-              selected={selectedDate}
-              onChange={(date) => setSelectedDate(date)}
-              minDate={new Date()} // Prevents selecting past dates
-              className="w-full p-2 border rounded-md"
-            />
-            <button
-              onClick={handleSubmit}
-              className="mt-4 w-full bg-borderbg cursor-pointer hover:text-white p-2 rounded-md text-bgprimary"
-            >
-              Book Appointment
-            </button>
+            <form action="" onSubmit={handleSubmit}>
+              <label className="block mb-2">Full Name</label>
+              <input
+                type="text"
+                className="w-full p-2 border rounded-md mb-4"
+              />
+              <label className="block mb-2">Select Doctor</label>
+              <select
+                className="w-full p-2 border rounded-md mb-4 "
+                value={selectedDoctor}
+                onChange={(e) => setSelectedDoctor(e.target.value)}
+              >
+                <option value="">-- Choose a Doctor --</option>
+                {doctors.map((doc) => (
+                  <option key={doc.id} value={doc.name}>
+                    {doc.name}
+                  </option>
+                ))}
+              </select>
+              <label className="block mb-2">Select Date</label>
+              <DatePicker
+                selected={selectedDate}
+                onChange={(date) => setSelectedDate(date)}
+                minDate={new Date()} // Prevents selecting past dates
+                className="w-full p-2 border rounded-md"
+              />
+              <button
+                type="submit"
+                className="mt-4 w-full bg-borderbg cursor-pointer hover:text-white p-2 rounded-md text-bgprimary"
+              >
+                Book Appointment
+              </button>
+            </form>
           </div>
         </div>
       </div>
