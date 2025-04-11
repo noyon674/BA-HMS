@@ -1,4 +1,4 @@
-const config = require("./config/config");
+const config = require("./config/configure");
 const App = require("./app");
 
 //import port

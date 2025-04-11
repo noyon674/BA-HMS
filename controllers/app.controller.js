@@ -1,4 +1,6 @@
-const Appointment = require("../models/appointment.model");
+const db = require("../models");
+
+const Appointment = db.Appointment;
 
 // Home route
 const homeController = (req, res) => {

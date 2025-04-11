@@ -1,26 +1,35 @@
-const { DataTypes } = require("sequelize");
-const sequelize = require("../db");
+'use strict';
+const { Model } = require('sequelize');
 
-// Define Appointment Model
-const Appointment = sequelize.define("Appointment", {
-  full_name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  doctor_name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  select_date: {
-    type: DataTypes.DATE,
-    allowNull: false,
-  },
-  phone_number: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-}, {
-  timestamps: false, // No createdAt/updatedAt fields
-});
+module.exports = (sequelize, DataTypes) => {
+  class Appointment extends Model {
+    static associate(models) {
+      // define association here if needed
+    }
+  }
 
-module.exports = Appointment;
+  Appointment.init({
+    full_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    doctor_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    select_date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    phone_number: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  }, {
+    sequelize,
+    modelName: 'Appointment',
+    timestamps: false,
+  });
+
+  return Appointment;
+};
