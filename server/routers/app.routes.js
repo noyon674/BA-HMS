@@ -1,8 +1,15 @@
-const { homeController } = require("../controllers/app.controller");
+const express = require("express");
+const {
+  homeController,
+  getAppointments,
+  createAppointment,
+} = require("../controllers/app.controller");
 
-const appRouter = require("express").Router();
+const appRouter = express.Router();
 
-//home route
+// Routes
 appRouter.get("/", homeController);
+appRouter.get("/appointments", getAppointments);
+appRouter.post("/appointments", createAppointment);
 
 module.exports = appRouter;
